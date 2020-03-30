@@ -20,13 +20,13 @@ public class SortingApp {
 			list.add((int)(Math.random() * MAX_INTEGER));
 		}
 		
-		System.out.println("정렬 전");
+		System.out.println("정렬 전 :");
 
 		printList(list);
 		
 		algorithm.sort(list);
 		
-		System.out.println("정렬 후");
+		System.out.println("정렬 후 :");
 		
 		printList(list);
 	}
