@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import sort.algorithm.BubbleSort;
+import sort.algorithm.SelectionSort;
 import sort.algorithm.SortingAlgorithm;
 
 public class SortingApp {
@@ -12,13 +13,17 @@ public class SortingApp {
 	
 	public static void main(String[] args) {
 		SortingAlgorithm algorithm;
-		algorithm = new BubbleSort();
+		
+//		algorithm = new BubbleSort();
+		algorithm = new SelectionSort();
 		
 		List<Integer> list = new ArrayList<Integer>();
 		
 		for(int i = 0; i < LIST_SIZE; i++) {
 			list.add((int)(Math.random() * MAX_INTEGER));
 		}
+		
+		algorithm.printName();
 		
 		System.out.println("Á¤·Ä Àü :");
 
