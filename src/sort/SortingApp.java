@@ -2,10 +2,10 @@ package sort;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
-import sort.algorithm.BubbleSort;
-import sort.algorithm.SelectionSort;
 import sort.algorithm.SortingAlgorithm;
+import sort.algorithm.SortingAlgorithmFactory;
 
 public class SortingApp {
 	private static int LIST_SIZE = 30;
@@ -13,9 +13,17 @@ public class SortingApp {
 	
 	public static void main(String[] args) {
 		SortingAlgorithm algorithm;
+		Scanner scanner = new Scanner(System.in);
 		
-//		algorithm = new BubbleSort();
-		algorithm = new SelectionSort();
+		System.out.println("Select Number(1. bubble sort 2. selection sort)");
+		
+		int number;
+		
+		number = scanner.nextInt();
+		
+		scanner.close();
+		
+		algorithm = SortingAlgorithmFactory.getAlgorithm(number);
 		
 		List<Integer> list = new ArrayList<Integer>();
 		
@@ -34,6 +42,7 @@ public class SortingApp {
 		System.out.println("Á¤·Ä ÈÄ :");
 		
 		printList(list);
+
 	}
 	
 	static void printList(List<Integer> list) {
