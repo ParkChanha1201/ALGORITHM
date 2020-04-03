@@ -33,13 +33,13 @@ public class SortingApp {
 		
 		algorithm.printName();
 		
-		System.out.println("Á¤·Ä Àü :");
+		System.out.println("ì •ë ¬ ì „ :");
 
 		printList(list);
 		
 		algorithm.sort(list);
 		
-		System.out.println("Á¤·Ä ÈÄ :");
+		System.out.println("ì •ë ¬ í›„ :");
 		
 		printList(list);
 	}
