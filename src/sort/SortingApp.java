@@ -15,7 +15,7 @@ public class SortingApp {
 		SortingAlgorithm algorithm;
 		Scanner scanner = new Scanner(System.in);
 		
-		System.out.println("Select Number(1. bubble sort 2. selection sort)");
+		System.out.println("Select Number(1. bubble sort 2. selection sort 3. quick sort)");
 		
 		int number;
 		

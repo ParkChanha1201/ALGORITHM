@@ -21,6 +21,8 @@ public class SortingAlgorithmFactory {
 			return BubbleSort.getInstance();
 		case SELECTION:  
 			return SelectionSort.getInstance(); 
+		case QUICK:
+			return QuickSort.getInstance();
 		}
 		return null;
 	}
