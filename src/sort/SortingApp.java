@@ -42,7 +42,6 @@ public class SortingApp {
 		System.out.println("Á¤·Ä ÈÄ :");
 		
 		printList(list);
-
 	}
 	
 	static void printList(List<Integer> list) {

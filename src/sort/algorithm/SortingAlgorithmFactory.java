@@ -9,6 +9,8 @@ public class SortingAlgorithmFactory {
 			return SortType.BUBBLE;
 		case 2:
 			return SortType.SELECTION;
+		case 3:
+			return SortType.QUICK;
 		}
 		return null;
 	}
@@ -17,8 +19,8 @@ public class SortingAlgorithmFactory {
 		switch(getSortType(n)) {
 		case BUBBLE:
 			return BubbleSort.getInstance();
-		case SELECTION:
-			return SelectionSort.getInstance();
+		case SELECTION:  
+			return SelectionSort.getInstance(); 
 		}
 		return null;
 	}

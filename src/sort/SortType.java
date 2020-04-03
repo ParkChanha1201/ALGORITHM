@@ -2,5 +2,6 @@ package sort;
 
 public enum SortType {
 	BUBBLE,
-	SELECTION
+	SELECTION,
+	QUICK
 }
