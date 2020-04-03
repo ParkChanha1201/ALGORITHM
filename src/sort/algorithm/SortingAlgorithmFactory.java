@@ -18,11 +18,9 @@ public class SortingAlgorithmFactory {
 	public static SortingAlgorithm getAlgorithm(int n){
 		switch(getSortType(n)) {
 		case BUBBLE:
-			return new BubbleSort();
-		case SELECTION:
-			return new SelectionSort();
-		case QUICK:
-			return QuickSort.getInstance();
+			return BubbleSort.getInstance();
+		case SELECTION:  
+			return SelectionSort.getInstance(); 
 		}
 		return null;
 	}

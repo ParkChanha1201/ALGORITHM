@@ -3,6 +3,19 @@ package sort.algorithm;
 import java.util.List;
 
 public class BubbleSort implements SortingAlgorithm{
+	private static BubbleSort instance;
+	
+	private BubbleSort() {
+	}
+	
+	public static BubbleSort getInstance() {
+		if(instance == null) {
+			instance = new BubbleSort();
+			return instance;
+		}
+		return instance;
+	}
+	
 	@Override
 	public void printName() {
 		System.out.println("BubbleSort");

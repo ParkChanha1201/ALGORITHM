@@ -3,6 +3,19 @@ package sort.algorithm;
 import java.util.List;
 
 public class SelectionSort implements SortingAlgorithm{
+	private static SelectionSort instance;
+	
+	private SelectionSort() {
+	}
+	
+	public static SelectionSort getInstance() {
+		if(instance == null) {
+			instance = new SelectionSort();
+			return instance;
+		}
+		return instance;
+	}
+	
 	@Override
 	public void printName() {
 		System.out.println("SelectionSort");
