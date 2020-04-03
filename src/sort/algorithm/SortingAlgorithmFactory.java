@@ -16,9 +16,9 @@ public class SortingAlgorithmFactory {
 	public static SortingAlgorithm getAlgorithm(int n){
 		switch(getSortType(n)) {
 		case BUBBLE:
-			return new BubbleSort();
+			return BubbleSort.getInstance();
 		case SELECTION:
-			return new SelectionSort();
+			return SelectionSort.getInstance();
 		}
 		return null;
 	}
